@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI}  !(\.png|\.jpg|\.gif|\.jpeg|\.bmp|\.css|\.js)$
+RewriteRule ^(.*)$ film-app/templates/router.php?request=$1 [L,QSA]
+
